@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Enter the name of the archived file to extract:"
+read filename
+
+/usr/bin/time -l tar -zxvf $filename.tar.gz
