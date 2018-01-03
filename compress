@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Enter the name of the file to compress:"
+read filename
+
+/usr/bin/time -l tar -zcvf $filename.tar.gz $filename
